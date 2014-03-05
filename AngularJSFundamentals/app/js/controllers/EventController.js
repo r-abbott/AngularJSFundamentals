@@ -6,6 +6,9 @@ eventsApp.controller("EventController",
         $scope.boolValue = true;
         $scope.mystyle = { color: 'red' };
         $scope.myclass = "blue";
+        $scope.buttonDisabled = true;
+        $scope.sortorder = 'name';
+
         $scope.event = {
             name: "Angular Boot Camp",
             date: '1/1/2013',
@@ -37,7 +40,7 @@ eventsApp.controller("EventController",
                     name: 'Well Behaved Controllers',
                     creatorName: 'Bill Withers',
                     duration: '2 hrs',
-                    level: 'Beginner',
+                    level: 'Intermediate',
                     abstract: 'You like Bill Withers? Let\'s play some Bill Withers together, but well behaved. Controller style!',
                     upVoteCount: 0
                 }
