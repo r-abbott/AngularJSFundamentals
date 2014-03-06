@@ -25,22 +25,11 @@
                         <h2 ng-class="myclass" ng-bind-template="{{event.name | uppercase}} {{event.date}}"></h2>
                     </div>
                 </div>
-
-                <div ng-bind-html-unsafe="snippet">some title</div>
-                <div ng-bind-html="snippet">some title</div>
-
-                <button class="btn" ng-disabled="buttonDisabled">Disabled</button>
-
-                <div ng-non-bindable>{{1 + 2}}</div>
-
-                <h2 ng-show="boolValue">Show This</h2>
-                <h2 ng-hide="boolValue">Hide This</h2>
-
+                
                 <div class="row">
                     <div class="col-md-3">
                         <div><strong>Date:</strong>{{event.date}}</div>
                         <div><strong>Time:</strong>{{event.time}}</div>
-                        <div><strong>Price:</strong>{{ 34 | currency}}</div>
                     </div>
                     <div class="col-md-4">
                         <address>
@@ -50,8 +39,6 @@
                         </address>
                     </div>
                 </div>
-
-                <div>{{ {a:3, b:'hi', c:{aa:35} } | json }}</div>
 
                 <hr />
 
@@ -100,6 +87,7 @@
         <script src="lib/bootstrap.min.js"></script>
         <script src="lib/angular/angular.js"></script>
         <script src="lib/angular/angular-sanitize.js"></script>
+        <script src="lib/angular/angular-resource.js"></script>
         <script src="js/app.js"></script>
         <script src="js/controllers/EventController.js"></script>
         <script src="js/controllers/EditEventController.js"></script>
