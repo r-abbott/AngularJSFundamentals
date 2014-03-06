@@ -58,9 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap-theme.min.css" />
     <Content Include="app\EventDetails.html" />
-    <Content Include="app\img\glyphicons-halflings-regular.svg" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\js\app.js" />
+    <Content Include="app\js\controllers\EditEventController.js" />
     <Content Include="app\js\controllers\EventController.js" />
     <Content Include="app\js\directives.js" />
     <Content Include="app\js\filters.js" />
@@ -331,6 +333,7 @@
     <Content Include="app\lib\bootstrap.min.js" />
     <Content Include="app\lib\jquery-1.9.1.min.js" />
     <Content Include="app\lib\underscore.min.js" />
+    <Content Include="app\NewEvent.html" />
     <Content Include="config\karma.conf.js" />
     <Content Include="config\protractor-conf.js" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -346,6 +349,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
@@ -392,6 +398,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\img\" />
     <Folder Include="app\js\services\" />
     <Folder Include="logs\" />
     <Folder Include="test\e2e\" />
