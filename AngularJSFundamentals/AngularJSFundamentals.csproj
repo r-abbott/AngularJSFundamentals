@@ -59,13 +59,18 @@
   <ItemGroup>
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap-theme.min.css" />
+    <Content Include="app\EditProfile.html" />
     <Content Include="app\EventDetails.html" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\img\profile.PNG" />
     <Content Include="app\js\app.js" />
     <Content Include="app\js\controllers\EditEventController.js" />
+    <Content Include="app\js\controllers\EditProfileController.js" />
     <Content Include="app\js\controllers\EventController.js" />
     <Content Include="app\js\directives.js" />
     <Content Include="app\js\filters.js" />
+    <Content Include="app\js\services\EventData.js" />
+    <Content Include="app\js\services\GravatarUrlBuilder.js" />
     <Content Include="app\lib\angular\angular-animate.js" />
     <Content Include="app\lib\angular\angular-animate.min.js" />
     <Content Include="app\lib\angular\angular-cookies.js" />
@@ -398,8 +403,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\img\" />
-    <Folder Include="app\js\services\" />
     <Folder Include="logs\" />
     <Folder Include="test\e2e\" />
     <Folder Include="test\unit\" />
