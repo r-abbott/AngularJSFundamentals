@@ -42,3 +42,8 @@ select, textarea {
 .blue {
     color:blue;
 }
+
+.controllerArea {
+    padding-left:20px;
+    padding-right:20px;
+}
