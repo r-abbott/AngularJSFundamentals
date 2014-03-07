@@ -20,4 +20,6 @@ eventsApp.controller("EventController",
         $scope.downVoteSession = function(session) {
             session.upVoteCount--;
         };
+
+        
     });
