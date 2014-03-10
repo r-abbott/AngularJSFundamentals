@@ -11,9 +11,54 @@ namespace WebAPI.Controllers
     public class EventsController : ApiController
     {
         // GET api/events
-        public IEnumerable<string> Get()
+        public IEnumerable<Event> Get()
         {
-            return new List<string> {"{\"name\": \"Some other event\"}"};
+            return new List<Event> {
+            new Event
+                {
+                    Id=1,
+                    Name="Angular Boot Camp",
+                    Date="1/1/2013",
+                    Time="10:30 am",
+                    Location = new Location
+                        {
+                            Address = "Google Headquarters",
+                            City="Mountain View",
+                            State = "CA"
+                        },
+                    ImageUrl = "img/angularjs-logo.png",
+                    Sessions = new List<Session>
+                        {
+                            new Session
+                                {
+                                    Name="Directives Masterclass",
+                                    CreatorName = "Bob Smith",
+                                    Duration = 1,
+                                    Level = "Advanced",
+                                    Abstract = "In this session you will learn the ins and outs...",
+                                    UpVoteCount = 0
+                                },
+                                new Session
+                                {
+                                    Name="Scopes for fun and profit",
+                                    CreatorName = "John Doe",
+                                    Duration = 2,
+                                    Level = "Introductory",
+                                    Abstract = "This session will take a closer look at the...",
+                                    UpVoteCount = 0
+                                },
+                                new Session
+                                {
+                                    Name="Well Behaved Controllers",
+                                    CreatorName = "Bill Withers",
+                                    Duration = 4,
+                                    Level = "Intermediate",
+                                    Abstract = "You like Bill Withers? Lets play some Bill Withers together, but well behaved. Controller style!",
+                                    UpVoteCount = 0
+                                }
+                        }
+                }
+            };
         }
 
         // GET api/events/5
@@ -21,6 +66,7 @@ namespace WebAPI.Controllers
         {
             return new Event
                 {
+                    Id=1,
                     Name="Angular Boot Camp",
                     Date="1/1/2013",
                     Time="10:30 am",
